@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andre\\Documents\\sem4\\tehnologii web\\New folder\\Gp\\tehnologiiWeb\\tehnologiiWeb\\tehnologiiWeb.csproj": {}
+    "C:\\Users\\andre\\Documents\\sem4\\tehnologii web\\New folder\\Gp\\tehnologiiWeb\\webTechnologies\\tehnologiiWeb\\tehnologiiWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andre\\Documents\\sem4\\tehnologii web\\New folder\\Gp\\tehnologiiWeb\\tehnologiiWeb\\tehnologiiWeb.csproj": {
+    "C:\\Users\\andre\\Documents\\sem4\\tehnologii web\\New folder\\Gp\\tehnologiiWeb\\webTechnologies\\tehnologiiWeb\\tehnologiiWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\Documents\\sem4\\tehnologii web\\New folder\\Gp\\tehnologiiWeb\\tehnologiiWeb\\tehnologiiWeb.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\Documents\\sem4\\tehnologii web\\New folder\\Gp\\tehnologiiWeb\\webTechnologies\\tehnologiiWeb\\tehnologiiWeb.csproj",
         "projectName": "tehnologiiWeb",
-        "projectPath": "C:\\Users\\andre\\Documents\\sem4\\tehnologii web\\New folder\\Gp\\tehnologiiWeb\\tehnologiiWeb\\tehnologiiWeb.csproj",
+        "projectPath": "C:\\Users\\andre\\Documents\\sem4\\tehnologii web\\New folder\\Gp\\tehnologiiWeb\\webTechnologies\\tehnologiiWeb\\tehnologiiWeb.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\Documents\\sem4\\tehnologii web\\New folder\\Gp\\tehnologiiWeb\\tehnologiiWeb\\obj\\",
+        "outputPath": "C:\\Users\\andre\\Documents\\sem4\\tehnologii web\\New folder\\Gp\\tehnologiiWeb\\webTechnologies\\tehnologiiWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
