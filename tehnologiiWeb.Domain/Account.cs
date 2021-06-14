@@ -2,13 +2,22 @@
 
 namespace tehnologiiWeb.Domain
 {
-    class Account
+    public class Account
     {
-        public string Username{ get; set; }
-        public string  Password { get; set; }
-        public int Name { get; set; }
+        [Key]
+        public int id { get; set; }
+        [MaxLength(15)]
+        public string username { get; set; }
+        [MaxLength(15)]
+        [RegularExpression(@"^(?=.*[a - z])(?=.*[A - Z])(?=.*\d).{8,}$", ErrorMessage = "Restrictions are not respected!" +
+                                                                                        "Should have at least one lower case!" +
+                                                                                        "Should have at least one upper case!" +
+                                                                                        "Minimum 8 characters")]
+        public string password { get; set; }
         [EmailAddress]
-        public string Email { get; set; }
+        public string email { get; set; }
+        [MaxLength(31)]
+        public string fullName { get; set; }
 
     }
 }

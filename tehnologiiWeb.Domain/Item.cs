@@ -3,7 +3,7 @@
 
 namespace tehnologiiWeb.Domain
 {
-    class Item
+    public class Item
     {
         [Key]
         public int  id { get; set; }
