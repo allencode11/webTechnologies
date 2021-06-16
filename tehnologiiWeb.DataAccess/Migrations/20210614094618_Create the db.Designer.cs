@@ -9,7 +9,7 @@ using tehnologiiWeb.DataAccess;
 
 namespace tehnologiiWeb.DataAccess.Migrations
 {
-    [DbContext(typeof(_DbContext))]
+    [DbContext(typeof(ApplicationDbContext))]
     [Migration("20210614094618_Create the db")]
     partial class Createthedb
     {

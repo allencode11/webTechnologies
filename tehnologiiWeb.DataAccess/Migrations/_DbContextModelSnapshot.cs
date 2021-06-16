@@ -8,7 +8,7 @@ using tehnologiiWeb.DataAccess;
 
 namespace tehnologiiWeb.DataAccess.Migrations
 {
-    [DbContext(typeof(_DbContext))]
+    [DbContext(typeof(ApplicationDbContext))]
     partial class _DbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

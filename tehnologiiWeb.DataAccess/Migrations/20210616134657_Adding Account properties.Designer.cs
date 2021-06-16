@@ -9,7 +9,7 @@ using tehnologiiWeb.DataAccess;
 
 namespace tehnologiiWeb.DataAccess.Migrations
 {
-    [DbContext(typeof(_DbContext))]
+    [DbContext(typeof(ApplicationDbContext))]
     [Migration("20210616134657_Adding Account properties")]
     partial class AddingAccountproperties
     {
