@@ -222,6 +222,9 @@ namespace tehnologiiWeb.DataAccess.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("confirmPassword")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("email")
                         .HasColumnType("nvarchar(max)");
 
@@ -232,6 +235,9 @@ namespace tehnologiiWeb.DataAccess.Migrations
                     b.Property<string>("password")
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
+
+                    b.Property<bool>("rememberMe")
+                        .HasColumnType("bit");
 
                     b.Property<string>("username")
                         .HasMaxLength(15)

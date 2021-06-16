@@ -6,10 +6,18 @@ namespace tehnologiiWeb.DataAccess
 {
     public class _DbContext : IdentityDbContext
     {
-        public _DbContext(DbContextOptions<_DbContext> options) : base(options)
+        private readonly DbContextOptions _options;
+        public _DbContext(DbContextOptions options) : base(options)
         {
+            _options = options;
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
 
         }
+
         public DbSet<Account> accounts { get; set; }
         public DbSet<Item> items { get; set; }
     }
