@@ -3,406 +3,412 @@
 }
 
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center justify-content-center">
-        <div class="container" data-aos="fade-up">
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
-            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-                <div class="col-xl-6 col-lg-8">
-                    <h1>An Efficient, Easy and Elegant Shop:</h1>
-                    <h2>E-Shop - the most used online store </h2>
+<br />
+<br />
+<br />
+<br />
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-xl-6 col-lg-8">
+                <h1>An Efficient, Easy and Elegant Shop:</h1>
+                <h2>E-Shop - the most used online store </h2>
+            </div>
+        </div>
+
+        <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+            <div class="col-xl-2 col-md-4">
+                <div class="icon-box">
+                    <i class="ri-store-line"></i>
+                    <h3>worldwide delivery</h3>
                 </div>
             </div>
+            <div class="col-xl-2 col-md-4">
+                <div class="icon-box">
+                    <i class="ri-bar-chart-box-line"></i>
+                    <h3>30 day money back guarantee</h3>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-4">
+                <div class="icon-box">
+                    <i class="ri-calendar-todo-line"></i>
+                    <h3>certified products</h3>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-4">
+                <div class="icon-box">
+                    <i class="ri-paint-brush-line"></i>
+                    <h3>individualization of products </h3>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-4">
+                <div class="icon-box">
+                    <i class="ri-database-2-line"></i>
+                    <h3>best price</h3>
+                </div>
+            </div>
+        </div>
 
-            <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
-                <div class="col-xl-2 col-md-4">
-                    <div class="icon-box">
-                        <i class="ri-store-line"></i>
-                        <h3>worldwide delivery</h3>
-                    </div>
+    </div>
+</section>
+<!-- End Hero -->
+
+<div>
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+                    <img src="https://bsframework.io/wp-content/uploads/2020/12/Shopping-Online-Offers.jpg" class="img-fluid" alt="">
                 </div>
-                <div class="col-xl-2 col-md-4">
-                    <div class="icon-box">
-                        <i class="ri-bar-chart-box-line"></i>
-                        <h3>30 day money back guarantee</h3>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-md-4">
-                    <div class="icon-box">
-                        <i class="ri-calendar-todo-line"></i>
-                        <h3>certified products</h3>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-md-4">
-                    <div class="icon-box">
-                        <i class="ri-paint-brush-line"></i>
-                        <h3>individualization of products </h3>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-md-4">
-                    <div class="icon-box">
-                        <i class="ri-database-2-line"></i>
-                        <h3>best price</h3>
-                    </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+                    <h3>Shopping online</h3>
+                    <p class="fst-italic">
+                        Customers can purchase items from the comfort of their own homes or work place.
+                        Shopping is made easier and convenient for the customer through internet.
+                        It is also easy to cancel the transactions.
+                        but the main advantages are the following:
+                    </p>
+                    <ul>
+                        <li><i class="ri-check-double-line"></i> Wide variety / range of products are available</li>
+                        <li><i class="ri-check-double-line"></i> Good discounts / lower prices</li>
+                        <li><i class="ri-check-double-line"></i> Saves time and efforts</li>
+                    </ul>
                 </div>
             </div>
 
         </div>
     </section>
-    <!-- End Hero -->
+    <!-- End About Section -->
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+        <div class="container" data-aos="zoom-in">
 
-    <div>
+            <div class="clients-slider swiper-container">
+                <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide"><img src="data:image/png;base64,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" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="data:image/png;base64,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" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="data:image/png;base64,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" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="~/assets/img/logo.png"></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
 
-        <!-- ======= About Section ======= -->
-        <section id="about" class="about">
-            <div class="container" data-aos="fade-up">
+        </div>
+    </section>
+    <!-- End Clients Section -->
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
 
-                <div class="row">
-                    <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-                        <img src="https://bsframework.io/wp-content/uploads/2020/12/Shopping-Online-Offers.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-                        <h3>Shopping online</h3>
-                        <p class="fst-italic">
-                            Customers can purchase items from the comfort of their own homes or work place.
-                            Shopping is made easier and convenient for the customer through internet.
-                            It is also easy to cancel the transactions.
-                            but the main advantages are the following:
-                        </p>
-                        <ul>
-                            <li><i class="ri-check-double-line"></i> Wide variety / range of products are available</li>
-                            <li><i class="ri-check-double-line"></i> Good discounts / lower prices</li>
-                            <li><i class="ri-check-double-line"></i> Saves time and efforts</li>
-                        </ul>
+            <div class="section-title">
+                <h2>Gallery</h2>
+                <p>Check our Gallery</p>
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-eng">English Books</li>
+                        <li data-filter=".filter-ru">Russian Books</li>
+                        <li data-filter=".filter-ro">Romanian Books</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-eng">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/AoK150.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Eng 1</h4>
+                            <p>English book</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/AoK150.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ru">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/i60.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Ru 1</h4>
+                            <p>Russian book</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/i60.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ro">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/ct135.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Ro 1</h4>
+                            <p>Romanian book</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/ct135.jpg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ro">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/d80.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Ro 2</h4>
+                            <p>Romanian book</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/d80.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ro">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/f160.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Ro 3</h4>
+                            <p>Romanian book</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/f160.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ro">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/f3-125.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Ro 4</h4>
+                            <p>Romanian book</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/f3-125.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ro">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/tcreativ125.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Ro 5</h4>
+                            <p>Romanian book</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/tc125.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ru filter-eng">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/pp35.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Ru/Eng 2</h4>
+                            <p>Translate</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/pp35.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ru filter-eng">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/pdg45.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Ru/Eng 3</h4>
+                            <p>Translate</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/pdg45.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ro">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/plp100.JPG" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Ro 6</h4>
+                            <p>Romanian book</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/plp100.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ro">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/rm60.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>R0 7</h4>
+                            <p>Romanian book</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/rm60.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-eng">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/tfio200.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Eng 4</h4>
+                            <p>English book</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/tfio200.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-eng">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/tss250.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Eng 5</h4>
+                            <p>English book</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/tss250.jpg data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-eng">
+                    <div class="portfolio-wrap">
+                        <img src="img/portfolio/wgwg275.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Eng 6</h4>
+                            <p>English book</p>
+                            <div class="portfolio-links">
+                                <a href="img/portfolio/wgwg275.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
-        </section>
-        <!-- End About Section -->
-        
-        <!-- ======= Clients Section ======= -->
-        <section id="clients" class="clients">
-            <div class="container" data-aos="zoom-in">
 
-                <div class="clients-slider swiper-container">
-                    <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><img src="data:image/png;base64,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" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="data:image/png;base64,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" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="data:image/png;base64,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" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="~/assets/img/logo.png"></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
+        </div>
+    </section>
+    <!-- End Portfolio Section -->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
 
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Contact Us</p>
             </div>
-        </section>
-        <!-- End Clients Section -->
-        
-        <!-- ======= Portfolio Section ======= -->
-        <section id="portfolio" class="portfolio">
-            <div class="container" data-aos="fade-up">
 
-                <div class="section-title">
-                    <h2>Gallery</h2>
-                    <p>Check our Gallery</p>
-                </div>
-
-                <div class="row" data-aos="fade-up" data-aos-delay="100">
-                    <div class="col-lg-12 d-flex justify-content-center">
-                        <ul id="portfolio-flters">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-eng">English Books</li>
-                            <li data-filter=".filter-ru">Russian Books</li>
-                            <li data-filter=".filter-ro">Romanian Books</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-eng">
-                        <div class="portfolio-wrap">
-                            <img src="img/portfolio/Abundance-of-Katherines 150 lei.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Eng 1</h4>
-                                <p>English book</p>
-                                <div class="portfolio-links">
-                                    <a href="img/portfolio/Abundance-of-Katherines 150 lei.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-ru">
-                        <div class="portfolio-wrap">
-                            <img src="img/portfolio/idiot 60 lei.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Ru 1</h4>
-                                <p>Russian book</p>
-                                <div class="portfolio-links">
-                                    <a href="img/portfolio/idiot 60 lei.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-ro">
-                        <div class="portfolio-wrap">
-                            <img src="img/portfolio/cavalerii tezaurului 135 lei.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Ro 1</h4>
-                                <p>Romanian book</p>
-                                <div class="portfolio-links">
-                                    <a href="img/portfolio/cavalerii tezaurului 135 lei.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-ro">
-                        <div class="portfolio-wrap">
-                            <img src="img/portfolio/dezbinare 80.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Ro 2</h4>
-                                <p>Romanian book</p>
-                                <div class="portfolio-links">
-                                    <a href="img/portfolio/dezbinare 80.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-ro">
-                        <div class="portfolio-wrap">
-                            <img src="img/portfolio/fluturii vol 160 lei.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Ro 3</h4>
-                                <p>Romanian book</p>
-                                <div class="portfolio-links">
-                                    <a href="img/portfolio/fluturii vol 160 lei.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-ro">
-                        <div class="portfolio-wrap">
-                            <img src="img/portfolio/fluturii vol 3 125 lei.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Ro 4</h4>
-                                <p>Romanian book</p>
-                                <div class="portfolio-links">
-                                    <a href="img/portfolio/fluturii vol 3 125 lei.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-ro">
-                        <div class="portfolio-wrap">
-                            <img src="img/portfolio/training creativ 125.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Ro 5</h4>
-                                <p>Romanian book</p>
-                                <div class="portfolio-links">
-                                    <a href="img/portfolio/training creativ 125.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-ru filter-eng">
-                        <div class="portfolio-wrap">
-                            <img src="img/portfolio/peter pan 35 - 40 lei.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Ru/Eng 2</h4>
-                                <p>Translate</p>
-                                <div class="portfolio-links">
-                                    <a href="img/portfolio/peter pan 35 - 40 lei.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-ru filter-eng">
-                        <div class="portfolio-wrap">
-                            <img src="img/portfolio/portret-doriana-greya- 45 lei.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Ru/Eng 3</h4>
-                                <p>Translate</p>
-                                <div class="portfolio-links">
-                                    <a href="img/portfolio/portret-doriana-greya- 45 lei.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-ro">
-                        <div class="portfolio-wrap">
-                            <img src="img/portfolio/patul lui procust.JPG" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Ro 6</h4>
-                                <p>Romanian book</p>
-                                <div class="portfolio-links">
-                                    <a href="img/portfolio/patul lui procust.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-ro">
-                        <div class="portfolio-wrap">
-                            <img src="img/portfolio/regulile marthei 60 lei.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>R0 7</h4>
-                                <p>Romanian book</p>
-                                <div class="portfolio-links">
-                                    <a href="img/portfolio/regulile marthei 60 lei.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-eng">
-                        <div class="portfolio-wrap">
-                            <img src="img/portfolio/the foult in our stars 200 lei.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Eng 4</h4>
-                                <p>English book</p>
-                                <div class="portfolio-links">
-                                    <a href="img/portfolio/the foult in our stars 200 lei.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-eng">
-                        <div class="portfolio-wrap">
-                            <img src="img/portfolio/the short second life 250.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Eng 5</h4>
-                                <p>English book</p>
-                                <div class="portfolio-links">
-                                    <a href="img/portfolio/the short second life 250.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-eng">
-                        <div class="portfolio-wrap">
-                            <img src="img/portfolio/will grayson, will grayson 275 lei.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Eng 6</h4>
-                                <p>English book</p>
-                                <div class="portfolio-links">
-                                    <a href="img/portfolio/will grayson, will grayson 275 lei.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
+            <div>
+                <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
             </div>
-        </section>
-        <!-- End Portfolio Section -->
-        
-        <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact">
-            <div class="container" data-aos="fade-up">
 
-                <div class="section-title">
-                    <h2>Contact</h2>
-                    <p>Contact Us</p>
-                </div>
+            <div class="row mt-5">
 
-                <div>
-                    <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <div class="col-lg-4">
+                    <div class="info">
+                        <div class="address">
+                            <i class="bi bi-geo-alt"></i>
+                            <h4>Location:</h4>
+                            <p>Moldova</p>
+                        </div>
 
-                <div class="row mt-5">
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                            <h4>Email:</h4>
+                            <p>TI-194@example.com</p>
+                        </div>
 
-                    <div class="col-lg-4">
-                        <div class="info">
-                            <div class="address">
-                                <i class="bi bi-geo-alt"></i>
-                                <h4>Location:</h4>
-                                <p>Moldova</p>
-                            </div>
-
-                            <div class="email">
-                                <i class="bi bi-envelope"></i>
-                                <h4>Email:</h4>
-                                <p>TI-194@example.com</p>
-                            </div>
-
-                            <div class="phone">
-                                <i class="bi bi-phone"></i>
-                                <h4>Call:</h4>
-                                <p>+1 5589 55488 55s</p>
-                            </div>
-
+                        <div class="phone">
+                            <i class="bi bi-phone"></i>
+                            <h4>Call:</h4>
+                            <p>+1 5589 55488 55s</p>
                         </div>
 
                     </div>
 
-                    <div class="col-lg-8 mt-5 mt-lg-0">
+                </div>
 
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                                </div>
-                                <div class="col-md-6 form-group mt-3 mt-md-0">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                                </div>
-                            </div>
-                            <div class="form-group mt-3">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
-                            <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
-                            <div class="my-3">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
-                            </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
-                        </form>
+                <div class="col-lg-8 mt-5 mt-lg-0">
 
-                    </div>
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
 
                 </div>
 
             </div>
-        </section>
-        <!-- End Contact Section -->
 
-    </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+
+</div>
 
 
 

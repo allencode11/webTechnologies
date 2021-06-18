@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -40,13 +41,16 @@
                 <ul>
                     <li><a class="nav-link scrollto active" asp-controller="Home" asp-action="Index">Home</a></li>
 
-                  
+
                     <li><a class="nav-link scrollto" href="#about">About</a></li>
                     <li><a class="nav-link scrollto" href="#portfolio">Shop</a></li>
                     <li><a class="nav-link scrollto" href="#contact">Contacts</a></li>
-                    
+
                     @if (User.Identity.IsAuthenticated)
                     {
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" asp-controller="ItemsList" asp-action="Index">Items</a>
+                        </li>
 
                         <li class="nav-item">
                             <a class="nav-link scrollto" asp-area="" asp-controller="Login" asp-action="Logout">Logout</a>
@@ -56,7 +60,7 @@
                     else
                     {
                         <li class="nav-item">
-                            <a class="nav-link scrollto" asp-controller="Login" asp-action="Index">Login</a>
+                            <a class="nav-link scrollto" asp-controller="ItemsList" asp-action="Create">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link scrollto" asp-area="" asp-controller="Register" asp-action="Index">Register</a>
@@ -66,9 +70,9 @@
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
-            
 
-            </div>
+
+        </div>
     </header><!-- End Header -->
 
     <div>
@@ -79,9 +83,9 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - Enache Alina 
+            &copy; 2021 - Enache Alina
         </div>
-    </footer>  
+    </footer>
 
     <!-- Vendor JS Files -->
     <script src="/vendor/aos/aos.js"></script>
@@ -94,7 +98,7 @@
 
     <!-- Template Main JS File -->
     <script src="/js/main.js"></script>
-
+    @RenderSection("Scripts", required: false)
 </body>
 
 </html>
