@@ -1,14 +1,13 @@
-﻿@model tehnologiiWeb.Web.Models.ItemsViewModel
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model tehnologiiWeb.Web.Models.ItemsViewModel
 
 <br />
-@if (@Model.Id is null)
-{
-    <h2 class="text-info">Create new item</h2>
-}
-else
-{
-    <h2 class="text-info">Update @Model.Name product</h2>
-}
+<h2 class="text-info">Update</h2>
 <br />
 
 
@@ -53,15 +52,7 @@ else
                 <span asp-validation-for="Owner" class="text-danger"></span>
             </div>
 
-            @if (@Model.Id is null)
-            {
-                <button type="submit" class="btn-primary">Create</button>
-            }
-            else
-            {
-                <button type="submit" class="btn-primary">Update</button>
-            }
-            
+            <button type="submit" class="btn-primary">Create</button>
         </form>
 
     </div>
