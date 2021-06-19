@@ -26,8 +26,6 @@ namespace tehnologiiWeb.Web.Controllers
         {
             var newAccount = new Account();
 
-            
-
             if (ModelState.IsValid)
             {
                 newAccount.Username = model.Username;
@@ -40,7 +38,7 @@ namespace tehnologiiWeb.Web.Controllers
                 ViewBag.message = "The user " + newAccount.Username + " is saved successfully";
                     //await newAccount. SignInAsync(user, isPersistent: false);
 
-                return RedirectToAction("index", "Home");
+                return RedirectToAction("Index", "Home");
             }
             else
             {

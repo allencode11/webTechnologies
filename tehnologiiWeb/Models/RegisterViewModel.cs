@@ -25,7 +25,7 @@ namespace tehnologiiWeb.Web.Models
 
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
-        [Compare("password", ErrorMessage = "Password and confirmation password not match.")]
+        [Compare("Password", ErrorMessage = "Password and confirmation password not match.")]
         public string ConfirmPassword { get; set; }
     }
 }

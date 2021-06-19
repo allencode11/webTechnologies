@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using tehnologiiWeb.DataAccess;
 using System.Threading.Tasks;
 using tehnologiiWeb.Web.Models;
 using tehnologiiWeb.Domain;
+using Microsoft.EntityFrameworkCore;
 
 namespace tehnologiiWeb.Web.Controllers
 {
@@ -26,9 +25,30 @@ namespace tehnologiiWeb.Web.Controllers
             return View();
         }
 
-        public IActionResult Create()
+        public async Task<IActionResult> Create(int? id)
         {
-            return View();
+            if(id is null)
+            {
+                return View(new ItemsViewModel());
+            }
+
+            var itemFromDb = await _Db.items.FirstOrDefaultAsync(item => item.Id == id.Value);
+            if (itemFromDb is null)
+            {
+                ViewBag.message = "Invalid data";
+                return View(new ItemsViewModel());
+            }
+
+            var r = new ItemsViewModel { Id = itemFromDb.Id,
+                                         Category = itemFromDb.Category,
+                                         Email = itemFromDb.Email,
+                                         Owner = itemFromDb.Owner, 
+                                         Name = itemFromDb.Name, 
+                                         Price = itemFromDb.Price, 
+                                         StringUrl = itemFromDb.StringUrl };
+
+
+            return View(r);
         }
         
         [HttpPost]
@@ -75,7 +95,6 @@ namespace tehnologiiWeb.Web.Controllers
 
         }
 
-        [HttpDelete]
         public async Task<IActionResult> Delete(ItemsViewModel model)
         {
             var item = await _Db.items.FindAsync(model.Id);

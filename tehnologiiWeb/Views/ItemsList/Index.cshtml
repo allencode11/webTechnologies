@@ -42,8 +42,8 @@
                 <h5>Owner: @item.Owner</h5>
             <td><img style="width: 20%; height: auto" src= @item.StringUrl/></td>
             <td>
-                <a class="btn btn-dark" style="color: beige" asp-controller="ItemsList" asp-action="Create">&nbsp; Update</a>
-                <a class="btn btn-primary" style="color: beige" asp-controller="ItemsList" asp-action="Delete">&nbsp; Delete</a>
+                <a class="btn btn-dark" style="color: beige" asp-controller="ItemsList" asp-route-id="@item.Id" asp-action="Create">&nbsp; Update</a>
+                <a class="btn btn-primary" style="color: beige" asp-controller="ItemsList" asp-action="Delete" asp-route-id="@item.Id" onclick="return confirm('Are you sure you want to delete?')">&nbsp; Delete</a>
             </td>
 
         </tr>

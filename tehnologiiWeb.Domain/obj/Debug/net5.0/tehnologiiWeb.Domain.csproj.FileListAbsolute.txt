@@ -12,3 +12,4 @@ C:\Users\andre\Documents\sem4\tehnologii web\New folder\Gp\tehnologiiWeb\webTech
 C:\Users\andre\Documents\sem4\tehnologii web\New folder\Gp\tehnologiiWeb\webTechnologies\tehnologiiWeb.Domain\bin\Debug\net5.0\tehnologiiWeb.Domain.runtimeconfig.json
 C:\Users\andre\Documents\sem4\tehnologii web\New folder\Gp\tehnologiiWeb\webTechnologies\tehnologiiWeb.Domain\bin\Debug\net5.0\tehnologiiWeb.Domain.runtimeconfig.dev.json
 C:\Users\andre\Documents\sem4\tehnologii web\New folder\Gp\tehnologiiWeb\webTechnologies\tehnologiiWeb.Domain\obj\Debug\net5.0\tehnologiiWeb.Domain.genruntimeconfig.cache
+C:\Users\andre\Documents\sem4\tehnologii web\New folder\Gp\tehnologiiWeb\webTechnologies\tehnologiiWeb.Domain\obj\Debug\net5.0\tehnologiiWeb.Domain.csproj.AssemblyReference.cache
