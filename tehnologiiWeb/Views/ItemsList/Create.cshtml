@@ -1,18 +1,18 @@
 ﻿@model tehnologiiWeb.Web.Models.ItemsViewModel
 
-<br />
-@if (@Model.Id is null)
-{
-    <h2 class="text-info">Create new item</h2>
-}
-else
-{
-    <h2 class="text-info">Update @Model.Name product</h2>
-}
-<br />
 
+<br />
+<div class="border container align-content-center" style="padding: 30px; margin: 10px">
 
-<div class="border container" style="padding: 30px;">
+    @if (@Model.Id is null)
+    {
+        <h2 class="text-info">Create new item</h2>
+    }
+    else
+    {
+        <h2 class="text-info">Update @Model.Name product</h2>
+    }
+    <br />
     <div class="col-md-12">
         <form method="post">
             <div asp-validation-summary="All" class="text-danger"></div>
@@ -52,6 +52,7 @@ else
                 <input asp-for="Owner" class="form-control" />
                 <span asp-validation-for="Owner" class="text-danger"></span>
             </div>
+            <br />
 
             @if (@Model.Id is null)
             {
@@ -61,7 +62,7 @@ else
             {
                 <button type="submit" class="btn-primary">Update</button>
             }
-            
+
         </form>
 
     </div>
