@@ -10,9 +10,13 @@ namespace tehnologiiWeb.Web.Models
     {
         public string Username { get; set; }
 
+        public bool RememberMe { get; set; }
+
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        public string ReturnURL { get; set; }
+        public string Role { get; set; } = "User";
+
+        public string ReturnURL { get; set; } = "/";
     }
 }

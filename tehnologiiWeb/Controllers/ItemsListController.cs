@@ -5,9 +5,12 @@ using System.Threading.Tasks;
 using tehnologiiWeb.Web.Models;
 using tehnologiiWeb.Domain;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 
 namespace tehnologiiWeb.Web.Controllers
 {
+   [Authorize]
     public class ItemsListController : Controller
     {
         private readonly ApplicationDbContext _Db;
@@ -21,7 +24,6 @@ namespace tehnologiiWeb.Web.Controllers
         {
 
             ViewBag.items = _Db.items.ToList();
-
             return View();
         }
 
@@ -95,6 +97,7 @@ namespace tehnologiiWeb.Web.Controllers
 
         }
 
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(ItemsViewModel model)
         {
             var item = await _Db.items.FindAsync(model.Id);

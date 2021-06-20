@@ -4,6 +4,11 @@ using tehnologiiWeb.Domain;
 using System.Threading.Tasks;
 using tehnologiiWeb.Web.Models;
 using tehnologiiWeb.DataAccess;
+using System.Collections.Generic;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using System;
 
 namespace tehnologiiWeb.Web.Controllers
 {
@@ -17,14 +22,15 @@ namespace tehnologiiWeb.Web.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index(string returnUrl = "")
+        public IActionResult Index(string ReturnUrl = "/")
         {
-            var model = new LoginViewModel { ReturnURL = returnUrl };
-            return View(model);
+            LoginViewModel objLoginModel = new LoginViewModel();
+            objLoginModel.ReturnURL = ReturnUrl;
+            return View(objLoginModel);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(LoginViewModel model)
+        public async Task<IActionResult> Index(LoginViewModel model)
         {
             if (ModelState.IsValid)
             {
@@ -32,14 +38,43 @@ namespace tehnologiiWeb.Web.Controllers
 
                 if (result == null)
                 {
-                 
+                    ViewBag.message = "Invalid credentials!";
+                }
+                else
+                {
+                    ViewBag.message = result.Role;
+
+                    var claims = new List<Claim>()
+                    {
+                        new Claim(ClaimTypes.NameIdentifier, Convert.ToString(result.Id)),
+                        new Claim(ClaimTypes.Name, result.Username),
+                        new Claim(ClaimTypes.Role, result.Role)
+                    };
+
+                    //Initialize a new instance of the ClaimsIdentity with the claims and authentication scheme    
+                    var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                    //Initialize a new instance of the ClaimsPrincipal with ClaimsIdentity    
+                    var principal = new ClaimsPrincipal(identity);
+                    //SignInAsync is a Extension method for Sign in a principal for the specified scheme.    
+                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, new AuthenticationProperties()
+                    {
+                        IsPersistent = model.RememberMe
+                    });
+                    return LocalRedirect(model.ReturnURL);
                 }
             }
-            ModelState.AddModelError("", "Invalid login attempt");
             return View(model);
         }
 
+        public async Task<IActionResult> LogOut()
+        {
+            //SignOutAsync is Extension method for SignOut    
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            //Redirect to home page    
+            return LocalRedirect("/");
+        }
     }
-}  
+
+}
 
 

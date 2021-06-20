@@ -16,6 +16,7 @@ namespace tehnologiiWeb.Domain
 
         public string Password { get; set; }
 
+        public string Role { get; set; } = "User";
 
     }
 }
