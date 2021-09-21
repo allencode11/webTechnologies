@@ -16,3 +16,21 @@ C:\Users\andre\Documents\sem4\tehnologii web\New folder\Gp\tehnologiiWeb\webTech
 C:\Users\andre\Documents\sem4\tehnologii web\New folder\Gp\tehnologiiWeb\webTechnologies\tehnologiiWeb.DataAccess\bin\Debug\net5.0\tehnologiiWeb.Domain.dll
 C:\Users\andre\Documents\sem4\tehnologii web\New folder\Gp\tehnologiiWeb\webTechnologies\tehnologiiWeb.DataAccess\bin\Debug\net5.0\tehnologiiWeb.Domain.pdb
 C:\Users\andre\Documents\sem4\tehnologii web\New folder\Gp\tehnologiiWeb\webTechnologies\tehnologiiWeb.DataAccess\obj\Debug\net5.0\tehnologiiWeb.DataAccess.csproj.CopyComplete
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.DataAccess\bin\Debug\net5.0\tehnologiiWeb.DataAccess.deps.json
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.DataAccess\bin\Debug\net5.0\tehnologiiWeb.DataAccess.runtimeconfig.json
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.DataAccess\bin\Debug\net5.0\tehnologiiWeb.DataAccess.runtimeconfig.dev.json
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.DataAccess\bin\Debug\net5.0\tehnologiiWeb.DataAccess.dll
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.DataAccess\bin\Debug\net5.0\ref\tehnologiiWeb.DataAccess.dll
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.DataAccess\bin\Debug\net5.0\tehnologiiWeb.DataAccess.pdb
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.DataAccess\bin\Debug\net5.0\tehnologiiWeb.Domain.dll
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.DataAccess\bin\Debug\net5.0\tehnologiiWeb.Domain.pdb
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.DataAccess\obj\Debug\net5.0\tehnologiiWeb.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.DataAccess\obj\Debug\net5.0\tehnologiiWeb.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.DataAccess\obj\Debug\net5.0\tehnologiiWeb.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.DataAccess\obj\Debug\net5.0\tehnologiiWeb.DataAccess.AssemblyInfo.cs
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.DataAccess\obj\Debug\net5.0\tehnologiiWeb.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.DataAccess\obj\Debug\net5.0\tehnologiiWeb.DataAccess.csproj.CopyComplete
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.DataAccess\obj\Debug\net5.0\tehnologiiWeb.DataAccess.dll
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.DataAccess\obj\Debug\net5.0\ref\tehnologiiWeb.DataAccess.dll
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.DataAccess\obj\Debug\net5.0\tehnologiiWeb.DataAccess.pdb
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.DataAccess\obj\Debug\net5.0\tehnologiiWeb.DataAccess.genruntimeconfig.cache

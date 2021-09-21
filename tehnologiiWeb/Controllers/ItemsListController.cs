@@ -32,7 +32,7 @@ namespace tehnologiiWeb.Web.Controllers
             if(id is null)
             {
                 return View(new ItemsViewModel());
-            }
+            }   
 
             var itemFromDb = await _Db.items.FirstOrDefaultAsync(item => item.Id == id.Value);
             if (itemFromDb is null)

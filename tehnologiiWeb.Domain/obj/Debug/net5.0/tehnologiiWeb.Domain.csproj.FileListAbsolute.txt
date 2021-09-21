@@ -13,3 +13,18 @@ C:\Users\andre\Documents\sem4\tehnologii web\New folder\Gp\tehnologiiWeb\webTech
 C:\Users\andre\Documents\sem4\tehnologii web\New folder\Gp\tehnologiiWeb\webTechnologies\tehnologiiWeb.Domain\bin\Debug\net5.0\tehnologiiWeb.Domain.runtimeconfig.dev.json
 C:\Users\andre\Documents\sem4\tehnologii web\New folder\Gp\tehnologiiWeb\webTechnologies\tehnologiiWeb.Domain\obj\Debug\net5.0\tehnologiiWeb.Domain.genruntimeconfig.cache
 C:\Users\andre\Documents\sem4\tehnologii web\New folder\Gp\tehnologiiWeb\webTechnologies\tehnologiiWeb.Domain\obj\Debug\net5.0\tehnologiiWeb.Domain.csproj.AssemblyReference.cache
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.Domain\bin\Debug\net5.0\tehnologiiWeb.Domain.deps.json
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.Domain\bin\Debug\net5.0\tehnologiiWeb.Domain.runtimeconfig.json
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.Domain\bin\Debug\net5.0\tehnologiiWeb.Domain.runtimeconfig.dev.json
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.Domain\bin\Debug\net5.0\tehnologiiWeb.Domain.dll
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.Domain\bin\Debug\net5.0\ref\tehnologiiWeb.Domain.dll
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.Domain\bin\Debug\net5.0\tehnologiiWeb.Domain.pdb
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.Domain\obj\Debug\net5.0\tehnologiiWeb.Domain.csproj.AssemblyReference.cache
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.Domain\obj\Debug\net5.0\tehnologiiWeb.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.Domain\obj\Debug\net5.0\tehnologiiWeb.Domain.AssemblyInfoInputs.cache
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.Domain\obj\Debug\net5.0\tehnologiiWeb.Domain.AssemblyInfo.cs
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.Domain\obj\Debug\net5.0\tehnologiiWeb.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.Domain\obj\Debug\net5.0\tehnologiiWeb.Domain.dll
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.Domain\obj\Debug\net5.0\ref\tehnologiiWeb.Domain.dll
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.Domain\obj\Debug\net5.0\tehnologiiWeb.Domain.pdb
+C:\Users\Owner\Documents\projects\webTechnologies\tehnologiiWeb.Domain\obj\Debug\net5.0\tehnologiiWeb.Domain.genruntimeconfig.cache
